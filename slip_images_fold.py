@@ -52,7 +52,7 @@ for file_name in ordered_files:
 
     if file_count % files_per_fold == 0:
         folder_count += 1
-        new_folder_path = os.path.join(dest_path, f"{prefix} // {prefix}_{folder_count}")
+        new_folder_path = os.path.join(dest_path, f"{prefix}//{prefix}_{folder_count}")
         os.makedirs(new_folder_path)
     
     #copy the file to new folder
